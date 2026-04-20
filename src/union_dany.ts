@@ -21,3 +21,18 @@ let orders = ['65' ,  '66' , '67', '68' , '69']
 // }
 
 //  in this situation written above is any. here currentOrder is any ( it can be anything ) thats why we have to avoid using any. :)
+
+
+// instead this way :
+let currentOrder: string | undefined;
+
+for(let order of orders){
+    if(currentOrder === "67"){
+        currentOrder = order
+        break;
+
+}
+    currentOrder = '123'
+}
+
+console.log(currentOrder)
