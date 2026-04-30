@@ -10,8 +10,9 @@ const chai = {
 // price: number
 // isHot: boolean
 // }
-
-// { 0 - 0 )
+// { 0 - 0 }
+//  |   |
+//     /\
 
 
 let tea : {
@@ -105,3 +106,14 @@ type user = {
 updateChai({price: 12});
 updateChai({Hot: true})
 updateChai({})
+
+type chaiOrder = {
+    name?: string;
+    quantity?: number
+
+}
+
+const PlaceOrder = (order: Required<chaiOrder>) => {
+    console.log(order)
+}
+
