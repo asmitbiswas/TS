@@ -93,7 +93,7 @@ type user = {
  }
 
  type chaiType = {
-     name: String,
+    name: String,
     price: Number,
     Hot: Boolean
  }
