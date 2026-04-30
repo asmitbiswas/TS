@@ -117,3 +117,26 @@ const PlaceOrder = (order: Required<chaiOrder>) => {
     console.log(order)
 }
 
+PlaceOrder({
+    name:"Lemon Tea",
+    quantity: 67
+})
+
+type chai = {
+     name: String,
+    price: Number
+}
+
+type basicInfoOfTea = Pick<chai, "name" | "price">
+
+const Teaa:basicInfoOfTea = {
+    name:"Milk tea",
+    price: 10
+}
+type Teae = {
+        name:string;
+    price: number;
+    secIngredients: string[]
+}
+
+type ing = Omit<chai, "secIngredients">
