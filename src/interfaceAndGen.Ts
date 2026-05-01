@@ -25,3 +25,8 @@ const AA:animeAbilitesAndName = {
 AA.power1 = "Sharingan" // ok cause power is changen and not in readonly method
 // AA.name = "naruto" : because it is under readonly method
 
+interface discountCalculator{
+    (price:number):number
+}
+
+const apply50:discountCalculator = (p:number) => p * 0.5
