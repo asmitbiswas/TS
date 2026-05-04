@@ -20,16 +20,16 @@ interface todo{
 
 const fetchdata = async() => {
     try {
-    const response:AxiosResponse<Todo> = await axios.get("https://jsonformatter.org/")
+    const response:AxiosResponse<todo> = await axios.get("https://jsonformatter.org/")
     }
 
     catch (error:any){
     if(axios.isAxiosError(error)){
-        conosle.log("Axios err", error)
+        console.log("Axios err", error)
     }
 
     if (error.response){
-    conosle.log(error.response.status)
+    console.log(error.response.status)
     }
 }}
 
