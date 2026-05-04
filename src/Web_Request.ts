@@ -1,4 +1,5 @@
-import axios, {AxiosResponse} from "axios";
+import axios from "axios";
+import type {AxiosResponse} from "axios"
 
 axios.get( 'http://localhost:8080/data').then(res => {
     console.log(res.data)
