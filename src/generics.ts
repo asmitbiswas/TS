@@ -35,7 +35,6 @@ const apiProm:apiPromise<{name:string}> = {
     status: 100,
         data: {
         name: "John"
-    }
-}
+    }}
 
 console.log(apiProm)
