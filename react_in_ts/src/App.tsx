@@ -1,5 +1,6 @@
 import "./App.css";
 import Car from "./components/Car.tsx";
+import  counter  from "./components/counter.tsx";
 
 function App() {
     return (
@@ -16,8 +17,13 @@ function App() {
                 name="Audi"
                 price={99999}
                 isSpecial={false}
-            />
+            />,
+            <div>
+                <counter></counter>
+            </div>
         </div>
+    
+    
     );
 }
 
