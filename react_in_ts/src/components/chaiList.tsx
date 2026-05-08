@@ -1,22 +1,23 @@
 import type { chaiList } from "../types";
-import  {CarName} from "./Car.tsx"
-interface chaiListProps{
-    items: chaiList[]
+import CarName from "./Car";
+
+interface ChaiListProps {
+    items: chaiList[];
 }
 
-export function chailist(items): chaiListProps{
-    return(
+export function ChaiList({ items }: ChaiListProps) {
+    return (
         <div>
-            {items.map((chai) => (
-                <CarName 
-                key = {chai.isSpecial}
-                name = {chai.name}
-                price = {chai.price}
+            {items.map((chai, index) => (
+                <CarName
+                    key={index}
+                    name={chai.name}
+                    price={chai.price}
+                    isSpecial={chai.isSpecial}
                 />
-
             ))}
         </div>
-    )
+    );
 }
 
-export default chailist;
+export default ChaiList;
