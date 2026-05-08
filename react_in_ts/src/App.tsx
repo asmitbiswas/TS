@@ -1,6 +1,12 @@
 import "./App.css";
 import Car from "./components/Car.tsx";
-import  counter  from "./components/counter.tsx";
+import ChaiList from "./components/chaiList.tsx";
+import  Counter  from "./components/counter.tsx";
+import type {chaiList} from "./types.ts"
+
+const menu:chaiList[] = [
+    {id: 24, name:"masala", price: 20, isSpecial: false }
+]
 
 function App() {
     return (
