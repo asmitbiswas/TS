@@ -4,7 +4,7 @@ type CarProps = {
     isSpecial: boolean;
 };
 
-function CarName({
+export function CarName({
     name = "",
     price = 0,
     isSpecial,
