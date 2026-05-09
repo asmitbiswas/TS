@@ -25,7 +25,7 @@ function App() {
                 isSpecial={false}
             />,
             <div>
-                <counter />
+                {/* <counter /> */}
             </div>
         </div>
     
