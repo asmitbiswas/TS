@@ -1,7 +1,8 @@
 import "./App.css";
 import Car from "./components/Car.tsx";
 import ChaiList from "./components/chaiList.tsx";
-import  Counter  from "./components/counter.tsx";
+import  counter  from "./components/counter.tsx";
+import OrderForm from "./components/orderFOrm.tsx";
 import type {chaiList} from "./types.ts"
 
 const menu:chaiList[] = [
@@ -25,7 +26,14 @@ function App() {
                 isSpecial={false}
             />,
             <div>
-                {/* <counter /> */}
+                 <ChaiList items = {menu}/> 
+            </div>
+            <div>
+                <OrderForm
+                onSubmit ={(order) => {
+                    console.log("Placed order", order.name, order.price)
+                }}
+                />
             </div>
         </div>
     
