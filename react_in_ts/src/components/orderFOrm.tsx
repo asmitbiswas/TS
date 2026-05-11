@@ -41,4 +41,6 @@ function OrderForm({onSubmit}: orderFormProps){
     )
 }
 
+<button type="submit">Place Order</button>
+
 export default OrderForm;
