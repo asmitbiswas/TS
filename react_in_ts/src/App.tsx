@@ -3,6 +3,7 @@ import Car from "./components/Car.tsx";
 import ChaiList from "./components/chaiList.tsx";
 import  counter  from "./components/counter.tsx";
 import OrderForm from "./components/orderFOrm.tsx";
+import { card } from "./components/Card.tsx";
 import type {chaiList} from "./types.ts"
 
 const menu:chaiList[] = [
@@ -34,6 +35,9 @@ function App() {
                     console.log("Placed order", order.name, order.price)
                 }}
                 />
+            </div>
+            <div>
+                <card/>
             </div>
         </div>
     
